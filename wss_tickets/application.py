@@ -1,15 +1,10 @@
 from flask import Flask
 from equitys import all_equitys
-import json
 from flask import jsonify
 
-app = Flask(__name__)
+application = Flask(__name__)
 
-@app.route("/tickets")
+@application.route("/tickets")
 def all():
-    ativos = all_equitys()
-    
+    ativos = all_equitys()    
     return jsonify(ativos)
-
-if __name__ == "__main__":
-   app.run()
