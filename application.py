@@ -1,5 +1,5 @@
 from flask import Flask,jsonify
-from equitys import all_equitys
+from wss_tickets.equitys import all_equitys
 
 
 application = Flask(__name__)

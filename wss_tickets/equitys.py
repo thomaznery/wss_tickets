@@ -20,7 +20,7 @@ urls = {'IBOV':"https://sistemaswebb3-listados.b3.com.br/indexPage/day/IBOV?lang
 
 today = date.today()
 today_str= today.strftime("%d-%m-%y")
-SAVE_PATH = f"{os.getcwd()}/download"
+SAVE_PATH = f"{os.getcwd()}/wss_tickets/download"
 X_PATH_DOWNLOAD = "//*[@id='divContainerIframeB3']/div/div[1]/form/div[2]/div/div[2]/div/div/div[1]/div[2]/p/a"
 
 def get_download_files():
