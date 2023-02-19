@@ -10,3 +10,5 @@ def all():
     ativos = all_equitys()    
     return jsonify(ativos)
 
+if __name__ == "__main__":
+    application.run()
