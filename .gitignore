@@ -1,3 +1,5 @@
+/download/*
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -6,7 +8,9 @@ __pycache__/
 
 # C extensions
 *.so
-download/
+
+
+
 
 # Distribution / packaging
 .Python

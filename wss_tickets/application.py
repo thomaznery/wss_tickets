@@ -1,16 +1,12 @@
-from flask import Flask,jsonify, render_template
+from flask import Flask,jsonify
 from equitys import all_equitys
 
 
-application = Flask(__name__, template_folder="./templates")
+application = Flask(__name__)
 
-@application.route("/tickets")
+@application.route("/")
 def all():
+    application.logger.info("serviço solicitado")
     ativos = all_equitys()    
     return jsonify(ativos)
 
-@application.route("/")
-def index():
-    return render_template("index.html")
-
-    
